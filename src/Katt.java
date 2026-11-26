@@ -1,15 +1,13 @@
 public class Katt extends Djur{
-    String art;
     String mat;
 
     public Katt(String namn, int vikt,String art,String mat){
-        super(namn, vikt);
-        this.art = art;
+        super(namn, vikt, art);
         this.mat = mat;
     }
 
     @Override
     public void visa() {
-        System.out.println(getNamn() + " är en " + art + " som väger " + getVikt() + " kg. " + getNamn() + " äter " + mat);
+        System.out.println(getNamn() + " är en " + getArt() + " som väger " + getVikt() + " kg. " + getNamn() + " äter " + mat);
     }
 }

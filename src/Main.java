@@ -5,5 +5,9 @@ public class Main {
         Hund b = new Hund("Boris", 12, "hund", "hundmat");
         a.visa();
         b.visa();
+        b.andraVikt(3);
+        b.visa();
+        System.out.println("Djurhemmet stänger");
+        System.out.println("Antal djur " + Djur.getAntalDjur());
     }
 }
