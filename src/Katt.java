@@ -10,7 +10,6 @@ public class Katt extends Djur{
 
     @Override
     public void visa() {
-        super.visa();
-        System.out.println(art + " äter " + mat);
+        System.out.println(getNamn() + " är en " + art + " som väger " + getVikt() + " kg. " + getNamn() + " äter " + mat);
     }
 }
